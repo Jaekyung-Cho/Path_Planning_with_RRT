@@ -105,15 +105,15 @@ public class RRT_star_IncludingReverse : MonoBehaviour
                 {
                     Debug.Log("Iteration : " + counter);
                 }
-                /*Vector3 randPoint = new Vector3(0,0,0);
+                Vector3 randPoint = new Vector3(0,0,0);
                 if(theTree.viewfinalNode() != null){
                     randPoint = GetClosedPoint(pathWayPoints);
                 }
                 else{
                     randPoint = GetRandomPoint();
-                }*/
+                }
 
-                Vector3 randPoint = GetRandomPoint();
+                //Vector3 randPoint = GetRandomPoint();
                 //Debug.Log("Random Point" + randPoint.ToString());
                 Node nearest = theTree.GetClosestLeaf(randPoint);
                 //Debug.Log("Nearest Point" + nearest.position.ToString());

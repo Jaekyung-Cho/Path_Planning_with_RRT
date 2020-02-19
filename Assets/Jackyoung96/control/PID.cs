@@ -129,9 +129,9 @@ public class PID : MonoBehaviour
 
             // velocity P control
             RateOfAccel = K_pp * (-K_p * (Mathf.Abs(speed) - ReferenceSpeed[numForNearest])-car.Acceleration);
-            Debug.Log(RateOfAccel);
+            //Debug.Log(RateOfAccel);
             if(numForNearest < ReferencePath.Count - 2){
-                if((speed <0.01 || speed > -0.01) && IsReverse[numForNearest +1 ] != IsReverse[numForNearest]){
+                if((speed <0.01 || speed > -0.01) && IsReverse[numForDistance -1 ] != IsReverse[numForDistance]){
                     while(ReferenceSpeed[numForNearest]==0){
                         numForNearest++;
                         numForDistance = numForNearest;
