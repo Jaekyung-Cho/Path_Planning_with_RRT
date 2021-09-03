@@ -1,3 +1,4 @@
 # Path_Planning_with_RRT
-
-#parking.mp4
+  
+Autonomous parking scenarios in Unity3D  
+Using RRT
